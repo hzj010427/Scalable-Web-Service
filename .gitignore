@@ -1,14 +1,19 @@
 # Compiled class file
 *.class
+!lib/*.class
 
 # doc files
 *.docx
+*.pdf
+*.xlsx
 
 # Log file
 *.log
 
 # BlueJ files
 *.ctxt
+*.txt
+!lib/*.txt
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -21,6 +26,14 @@
 *.zip
 *.tar.gz
 *.rar
+*.tgz
+
+# Sample file
+sample
+
+# Other ignore files
+tools/.gitignore
+lib/.gitignore
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
