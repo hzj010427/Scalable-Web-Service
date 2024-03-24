@@ -1,7 +1,13 @@
-all: Server.class
+JAVAC = javac
+
+SOURCES = $(wildcard *.java)
+
+CLASSES = $(SOURCES:.java=.class)
+
+all: $(CLASSES)
 
 %.class: %.java
-	javac $<
+	$(JAVAC) $<
 
 clean:
 	rm -f *.class
