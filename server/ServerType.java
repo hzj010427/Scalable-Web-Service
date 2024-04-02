@@ -7,4 +7,18 @@ public enum ServerType {
     Coordinator,
     FRONT,
     MIDDLE;
+
+    @Override
+    public String toString() {
+        switch (this) {
+            case Coordinator:
+                return "Coordinator";
+            case FRONT:
+                return "Front";
+            case MIDDLE:
+                return "Middle";
+            default:
+                return "Unknown";
+        }
+    }
 }
